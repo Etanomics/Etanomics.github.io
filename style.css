@@ -1,0 +1,22 @@
+*{
+    background-color: white; 
+    font-family: Century Gothic;
+}
+
+.title{
+    color: black;
+    font-size: 20pt;
+    text-align: center;
+}
+
+.logo img{
+    float: right;
+    width: 200px;
+    height: auto;
+}
+ul{
+    float: left;
+    list-style-type: disc;
+}
+
+
