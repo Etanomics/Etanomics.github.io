@@ -79,7 +79,7 @@
 
             if (isValidDate(infoObj.startDate) && isValidDate(infoObj.endDate)) {
                 tableau.connectionData = JSON.stringify(infoObj); // Use this variable to pass data to your getSchema and getData functions
-                tableau.connectionName = "Rohstoffpreise in " + infoObj.currency + "/ Währung<" + infoObj.unit + "> für " + infoObj.code + " vom " + infoObj.startDate + " bis " + infoObj.endDate; // This will be the data source name in Tableau
+                tableau.connectionName = "Rohstoffpreise in [" + infoObj.currency + "/ Währung<" + infoObj.unit + ">] für " + infoObj.code + " vom " + infoObj.startDate + " bis " + infoObj.endDate; // This will be the data source name in Tableau
                 tableau.submit(); // This sends the connector object to Tableau
             } else {
                 $('#errorMsg').html("Enter valid dates. For example, 2016-05-08.");
