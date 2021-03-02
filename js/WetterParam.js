@@ -44,7 +44,7 @@
         dataType: tableau.dataTypeEnum.float
     }, {
         id: "niederschlag",
-        alias:"Niederschlag über 1h [mm]",
+        alias:"Niederschlag [mm]",
         dataType: tableau.dataTypeEnum.float
     }];
 
