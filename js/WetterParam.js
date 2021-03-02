@@ -36,7 +36,7 @@
         dataType: tableau.dataTypeEnum.float
     }, {
         id: "windrichtung",
-        alias:"Windrichtung [°]",
+        alias:"Windrichtung [°] (Azimutwinkel)",
         dataType: tableau.dataTypeEnum.float
     }, {
         id: "druck",
