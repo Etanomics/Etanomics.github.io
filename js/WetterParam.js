@@ -43,6 +43,10 @@
         alias:"Druck [hPa]",
         dataType: tableau.dataTypeEnum.float
     }, {
+        id: "wetterstationsnummer",
+        alias:"Wetterstationsnummer",
+        dataType: tableau.dataTypeEnum.float
+    }, {
         id: "niederschlag",
         alias:"Niederschlag [mm]",
         dataType: tableau.dataTypeEnum.float
@@ -79,6 +83,7 @@
                 "spitzenboee": feat[i].peakgust,
                 "windrichtung": feat[i].winddirection,
                 "druck": feat[i].pressure,
+                "wetterstationsnummer": infoObj.stationnumber,
                 "niederschlag": feat[i].precipitation
             });
         }
