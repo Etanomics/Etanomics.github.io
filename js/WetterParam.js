@@ -45,7 +45,7 @@
     }, {
         id: "wetterstationsnummer",
         alias:"Wetterstationsnummer",
-        dataType: tableau.dataTypeEnum.float
+        dataType: tableau.dataTypeEnum.string
     }, {
         id: "niederschlag",
         alias:"Niederschlag [mm]",
