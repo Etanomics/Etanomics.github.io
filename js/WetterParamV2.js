@@ -43,6 +43,10 @@
         alias:"Sonnenscheindauer [min]",
         dataType: tableau.dataTypeEnum.float
     }, {
+        id: "wetterstationsnummer",
+        alias:"Wetterstationsnummer Meteostat",
+        dataType: tableau.dataTypeEnum.string
+    }, {
         id: "niederschlag",
         alias:"Niederschlag [mm]",
         dataType: tableau.dataTypeEnum.float
@@ -91,6 +95,7 @@
                 "windrichtung": feat[i].wdir,
                 "druck": feat[i].pres,
                 "sonne": feat[i].tsun,
+                "wetterstationsnummer": infoObj.stationnumber,
                 "niederschlag": feat[i].prcp
             });
         }
@@ -117,7 +122,7 @@
 
             if (isValidDate(infoObj.startDate)) {
                 tableau.connectionData = JSON.stringify(infoObj); // Use this variable to pass data to your getSchema and getData functions
-                tableau.connectionName = "Wetterdaten Station " + infoObj.stationnumber + " ab " + infoObj.startDate + " bis " + infoObj.endDate; // This will be the data source name in Tableau
+                tableau.connectionName = "Rapid API Wetterdaten Station " + infoObj.stationnumber + " ab " + infoObj.startDate + " bis " + infoObj.endDate; // This will be the data source name in Tableau
                 tableau.submit(); // This sends the connector object to Tableau
             } else {
                 $('#errorMsg').html("Enter valid dates. For example, 2016-05-08.");
