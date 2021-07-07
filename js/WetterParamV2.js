@@ -8,15 +8,15 @@
         dataType: tableau.dataTypeEnum.date
     }, {
         id: "temperatur",
-        alias:"durchschnittliche Temperatur [°C]",
+        alias:"durchschnittliche Außentemperatur [°C]",
         dataType: tableau.dataTypeEnum.float
     },  {
         id: "mintemperatur",
-        alias:"minimale Temperatur [°C]",
+        alias:"minimale Außentemperatur [°C]",
         dataType: tableau.dataTypeEnum.float
     },  {
         id: "maxtemperatur",
-        alias:"maximale Temperatur [°C]",
+        alias:"maximale Außentemperatur [°C]",
         dataType: tableau.dataTypeEnum.float
     },  {
         id: "schneefall",
